@@ -1,12 +1,24 @@
-﻿<Window x:Class="GravityBall.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GravityBall"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+﻿<Window
+    x:Class="GravityBall.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:GravityBall"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    Background="White"
+    mc:Ignorable="d" LocationChanged="Window_LocationChanged" SizeChanged="Window_SizeChanged">
+    <Grid x:Name="mainGrid">
+        <Ellipse
+            x:Name="ball"
+            Width="50"
+            Height="50"
+            Margin="375,75,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Stroke="Black" Fill="Black" />
+
     </Grid>
 </Window>
